@@ -24,7 +24,7 @@ First, let's get these image dimensions under control...
     color: #eeeeee;
     text-shadow: 0 0 2px black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; /* space-between did NOT look good */
     border-bottom: 5px solid #1A759F;
     border-radius: 2px;
     /* first time using this property... not a huge effect, but kinda cool? */
