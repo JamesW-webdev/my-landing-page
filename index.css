@@ -1,6 +1,8 @@
 /*
 Design related info:
 
+Rough sketch/"design doc" here: images/project-sketch.jpg
+
 Color palette being used - https://coolors.co/palette/d9ed92-b5e48c-99d98c-76c893-52b69a-34a0a4-168aad-1a759f-1e6091-184e77
 
 */
@@ -24,7 +26,7 @@ First, let's get these image dimensions under control...
     color: #eeeeee;
     text-shadow: 0 0 2px black;
     display: flex;
-    justify-content: space-around; /* space-between did NOT look good */
+    justify-content: center; /* space-between did NOT look good, space-around was no different. */
     border-bottom: 5px solid #1A759F;
     border-radius: 2px;
     /* first time using this property... not a huge effect, but kinda cool? */
