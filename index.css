@@ -1,0 +1,41 @@
+/*
+Design related info:
+
+Color palette being used - https://coolors.co/palette/d9ed92-b5e48c-99d98c-76c893-52b69a-34a0a4-168aad-1a759f-1e6091-184e77
+
+*/
+
+/*
+General body code, for things meant to be applied to the entire site.
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+
+/*
+First, let's get these image dimensions under control...
+*/
+
+#header {
+    background-color: #1E6091;
+    color: #eeeeee;
+    text-shadow: 0 0 2px black;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid #1A759F;
+    border-radius: 2px;
+    /* first time using this property... not a huge effect, but kinda cool? */
+    box-shadow: 0 5px 1px #76C893;
+}
+
+#header img {
+    width: 300px;
+    padding: 20px;
+}
+
+#header-info {
+    margin-top: 20px;
+}
