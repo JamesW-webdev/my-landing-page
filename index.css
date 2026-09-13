@@ -11,14 +11,29 @@ Color palette being used - https://coolors.co/palette/d9ed92-b5e48c-99d98c-76c89
 General body code, for things meant to be applied to the entire site.
 */
 
+@font-face {
+    src: url("fonts/Pixelzone.ttf");
+    font-family: "Pixelzone";
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     text-align: center;
+    /*
+    These will get overridden by more specific CSS selectors down the
+    line per our needs
+    */
+
+    font-family: Roboto, Arial, sans-serif;
+    color: #111111; /* Pure black and pure white colors are hard on the eyes for webpages, so I always adjust a little bit */
 }
 
 
 /*
-First, let's get these image dimensions under control...
+On second thought, let's tackle this from top to bottom, fix the images
+and other elements as we go
 */
 
 #header {
@@ -31,6 +46,7 @@ First, let's get these image dimensions under control...
     border-radius: 2px;
     /* first time using this property... not a huge effect, but kinda cool? */
     box-shadow: 0 5px 1px #76C893;
+    margin-bottom: 0;
 }
 
 #header img {
@@ -40,4 +56,37 @@ First, let's get these image dimensions under control...
 
 #header-info {
     margin-top: 20px;
+    font-family: Pixelzone, monospace;
+    font-size: 28px;
+}
+
+#about-me {
+    margin-top: 0;
+    background-color: #B5E48C;
+}
+/*
+The h2 element has some default margin settings we need to remove so
+this flows like the design
+*/
+#about-me h2 {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+/*
+Jamming all of that about me text in to one paragraph looks bad in my
+opinion and makes it difficult to read, so I'll use two paragraphs.
+The problem is, I need that padding to give the text some breathing room.
+
+So let's get fancy, and use the last-child pseudoselector to get the final
+paragraph in this section, instead of having to give it an ID.
+
+That way if I decide I want to add another paragraph to the end later,
+I won't have to change which element has the ID.
+
+Software Engineering principle demonstrated: Scalability
+ */
+
+#about-me p:last-child {
+    padding-bottom: 20px;
 }
