@@ -85,7 +85,8 @@ this flows like the design
 */
 #about-me h2 {
     margin-top: 0;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 /*
@@ -103,5 +104,42 @@ Software Engineering principle demonstrated: Scalability
  */
 
 #about-me p:last-child {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+
+#skills {
+    background-color: #76C893;
+}
+
+#skills h2 {
+    margin-top: 0;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#skills-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+#skills-flex img {
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+    border: 3px solid #1E6091;
+}
+
+
+#skills-flex p {
+    padding: 0 30px;
+}
+
+/*
+I have to set a fixed width for the containers, otherwise
+it ends up being aligned off-center
+*/
+
+#skills-flex div {
+    width: 400px;
 }
