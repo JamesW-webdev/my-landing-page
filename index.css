@@ -49,9 +49,24 @@ and other elements as we go
     margin-bottom: 0;
 }
 
+/*
+I definitely had some struggles with this image. I never could
+take a good picture, and the dimensions of the image made this a
+challenge to style.
+
+All projects have time constraints and budgets however, so I can't
+fuss about this too long. I need to get used to putting a project
+out, remember MVP, take what I learn from this one to my next
+project, and the next, etc.
+*/
+
 #header img {
     width: 300px;
-    padding: 20px;
+    height: 300px;
+    /*padding: 20px;*/
+    margin: 20px 10px;
+    border: 7px solid #34A0A4;
+    border-radius: 50%;
 }
 
 #header-info {
