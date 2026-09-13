@@ -143,3 +143,42 @@ it ends up being aligned off-center
 #skills-flex div {
     width: 400px;
 }
+
+#connect-with-me {
+    background-color: #184E77;
+    color: #eeeeee;
+}
+
+#connect-with-me h2 {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+#connect-with-me div {
+    display: flex;
+    justify-content: center;
+}
+
+
+#connect-with-me img {
+    padding: 30px 20px 20px 20px;
+}
+
+#footer {
+    background-color: #184E77;
+    color: #eeeeee;
+}
+
+#footer p {
+    font-size: 12px;
+}
+
+#footer p:first-child {
+    margin-top: 0;
+    padding-top: 100px;
+}
+
+#footer p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
